@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').on('click',function(){
+			$.get('ajax.json',function(data){
+				var str = "";
+				
+				$('tr:gt(0)').remove();
+				
+				$.each(data,function(index,item){
+					str += "<tr>";
+					str += "<td>" + (index + 1) + "</td>";
+					str += "<td>" + item['id'] + "</td>";
+					str += "<td>" + item['name'] + "</td>";
+					str += "</tr>";
+				})
+				$('table').append(str);
+			})
+		})
+	})
+</script>
+</head>
+<body>
+	<input type="text" size="20">
+	<button>회원정보 요청버튼</button>
+	<table border="1">
+		<tr>
+			<th>번호</th>
+			<th>아이디</th>
+			<th>이름</th>
+		</tr>
+	</table>
+
+</body>
+</html>

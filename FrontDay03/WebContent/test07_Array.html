@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Array</title>
+<script type="text/javascript">
+	var arr1 = new Array(5); // 크기가 5인 배열
+	var arr2 = new Array('aaa','bbb','ccc'); // 생성과 동시에 초기화
+	var arr3 = new Array(); // 크기가 정해지지 않은 배열 생성
+	var arr4 = [100,200,300,3.14,0.99];
+	
+	arr4.push('abc');
+	var result = '';
+	for(var i=0; i<arr4.length; i++) {
+		result += arr4[i]+'<br>';
+	}
+	document.write(result);
+</script>
+</head>
+<body>
+
+</body>
+</html>

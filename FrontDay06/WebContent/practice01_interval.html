@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var count = 0
+		function tick(){
+			count++;
+			if(count%2 == 0){
+				$('#div1').css('background','pink')	
+			} else {
+				$('#div1').css('background','white')				
+			}
+			$('#h').html("count = " + count)
+		}
+		
+		var timer = setInterval(tick,1000);
+		
+// 		var timer = setInterval((function(){
+// 			count++;
+// 			if(count%2 == 0){
+// 				$('#div1').css('background','pink')	
+// 			} else {
+// 				$('#div1').css('background','white')
+// 			}
+// 			$('#h').html("count = " + count)
+// 			console.log(count);
+// 		}), 1000)
+		
+		$('#div1').click(function(){
+			count++;
+			if(count%2 == 0){
+				$('#div1').css('background','pink')	
+			} else {
+				$('#div1').css('background','white')
+			}
+			$('#h').html("count = " + count)
+		})
+	})
+	
+</script>
+</head>
+<body>
+	<div id="div1"><h1 id="h"></h1></div>
+</body>
+</html>

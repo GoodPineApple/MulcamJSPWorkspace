@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+// 		$('#btn1').click(function() {$('img').toggle('slow');});
+		$('#btn1').click(function() {
+			$('img').toggle({
+				duration : 3000,
+				complete : function(){
+					who = prompt("사진의 이름은?","doboo");
+					alert(who + "는 참 귀엽다");
+				}
+			})
+		})
+		$('#btn2').click(function() {
+			$('h1').toggle({
+				duration : 2000,
+				complete:function() {
+					alert("애니메이션이 끝났습니다.");
+				}
+			});
+		});
+		
+		$('img').attr('src','img/doboo.png');
+	})
+</script>
+</head>
+<body>
+	이미지파일
+	<button id="btn1">show/hide</button>
+	<br>
+	문자열
+	<button id="btn2">show/hide</button>
+	<hr>
+	<img/><br>
+	<hr>
+	<h1>문자열입니다.</h1>
+	<hr>
+</body>
+</html>

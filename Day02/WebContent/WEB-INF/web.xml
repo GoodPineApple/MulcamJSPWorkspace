@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Day01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!--  servlet-name은 변수 이름처럼 마음대로 지어줘도 되고 -->
+  <!-- servlet-class는 java파일로 작성한 클래스의 풀 패키지명임. -->
+<!--   <servlet> -->
+<!--   		<servlet-name>testServlet</servlet-name> -->
+<!--   		<servlet-class>servlet.TestServlet</servlet-class> -->
+<!--   </servlet> -->
+  
+<!--   <servlet-mapping> -->
+<!--   		<servlet-name>testServlet</servlet-name> -->
+<!--   		<url-pattern>/test02</url-pattern> -->
+<!--   </servlet-mapping> -->
+</web-app>

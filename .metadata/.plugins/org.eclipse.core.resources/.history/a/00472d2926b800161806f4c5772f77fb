@@ -1,0 +1,69 @@
+package controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+
+import service.NewsService;
+import vo.News;
+import vo.NewsList;
+
+@WebServlet(urlPatterns="/news.do")
+public class NewsServlet extends HttpServlet{
+	NewsService service = NewsService.getInstance();
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		execute(request, response);
+	}
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		execute(request, response);
+	}
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/xml;charset=UTF-8");
+		PrintWriter out = response.getWriter();
+		String action=request.getParameter("action");
+		if(action==null || action.equals("main")){
+			String startRowStr = request.getParameter("startRow");
+			String endRowStr = request.getParameter("endRow");
+			int startRow = 0;
+			int endRow = 0;
+			if(startRowStr != null && startRowStr.length() > 0){
+				startRow = Integer.parseInt(startRowStr);
+			}
+			if(endRowStr != null && endRowStr.length() > 0){
+				endRow = Integer.parseInt(endRowStr);
+			}
+			System.out.println(startRow);
+			System.out.println(endRow);
+			NewsList newsList = new NewsList();
+			List<News> news = new ArrayList<>();
+			news = service.newsList(startRow,endRow);
+			try {
+				JAXBContext jc = JAXBContext.newInstance(NewsList.class);		//Object -> XML
+				Marshaller marshaller = jc.createMarshaller();
+				marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+				for(News n : news){
+					newsList.getNews().add(n);
+				}
+				marshaller.marshal(newsList, out);
+//				marshaller.marshal(newsList, System.out);
+			} catch (JAXBException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		} 
+	}
+}

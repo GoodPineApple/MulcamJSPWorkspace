@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#btn1').click(function() {$('img').toggle('slow');});
+		$('#btn2').click(function() {$('img').slideToggle('slow');});
+		$('#btn3').click(function() {$('img').fadeToggle('slow');});
+		
+		$('#btn4').click(function() {$('h1').toggle('slow');});
+		$('#btn5').click(function() {$('h1').slideToggle('slow');});
+		$('#btn6').click(function() {$('h1').fadeToggle('slow');});
+		
+		$('img').attr('src','img/doboo.png');
+	})
+</script>
+</head>
+<body>
+	이미지파일
+	<button id="btn1">show/hide</button>
+	<button id="btn2">slide</button>
+	<button id="btn3">fade</button>
+	<br>
+	문자열
+	<button id="btn4">show/hide</button>
+	<button id="btn5">slide</button>
+	<button id="btn6">fade</button>
+	<hr>
+	<img/><br>
+	<hr>
+	<h1>문자열입니다.</h1>
+	<hr>
+</body>
+</html>

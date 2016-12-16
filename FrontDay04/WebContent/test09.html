@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test09.html</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var colors = ["red","orange","yellow","green","blue"]
+		$('h1').each(function(index,item){
+		// function 첫 실행시에는 index=1, item=$('h1:first')
+			$(item).css("color",colors[index]);
+		})
+	})
+
+</script>
+</head>
+<body>
+	<h1>빨강</h1>
+	<h1>주황</h1>
+	<h1>노랑</h1>
+	<h1>초록</h1>
+	<h1>파랑</h1>
+</body>
+</html>

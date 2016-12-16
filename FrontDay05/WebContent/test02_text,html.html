@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test02_click.html</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+// text함수
+// : 문자열만을 가져옴
+// : 같은 이름의 대상들이 있을 때 모든 텍스트만을 가져옴
+// html함수
+// : 태그와 문자열, 노드 등 모두 가져옴
+// : 같은 이름의 대상들이 있을 때 가장 처음의 대상에게만 적용됨 - each문과 함께 사용하기.
+	$(function(){
+// 		var msg = $('div').html();
+// 		var msg = $('div').text();
+// 		alert(msg);
+		$('div').each(function(index,item){
+			alert($(item).html())
+		})
+	})
+</script>
+</head>
+<body>
+	<div><h1 id="es">A</h1></div>
+	<div><h1>B</h1></div>
+	<div><h1>C</h1></div>
+</body>
+</html>

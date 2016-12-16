@@ -1,0 +1,44 @@
+/* BASIC css start */
+/* BASIC css start */
+#category { clear:both; margin:0; }
+#category .position { }
+#category .position > ul { font-size:0px; line-height:0px; }
+#category .position > ul > li { position:relative; z-index:10; /*display:inline-block; *display:inline; *zoom:1;*/ }
+#category .position > ul > li a { display:block; line-height:20px; font-family: 'Roboto', 'Nanum Gothic', sans-serif; font-weight:normal; font-size:11px; letter-spacing:1px; color:#111; }
+#category .position > ul > li a:hover { color:#666; }
+
+#category .position > ul > li a.cate1,
+#category .position > ul > li a.cate2 { font-weight:normal; color:#202529; }
+#category .position > ul > li a.cate1:hover,
+#category .position > ul > li a.cate2:hover { color:#666; }
+#category .position > ul > li a.cate2 { margin-bottom:20px; }
+
+/* BASIC css end */
+
+
+
+
+
+
+
+.slideshow-wrapper  { margin:0 auto; position:relative; width:230px; height:311px; border:0 !important; } /* overflow:hidden; */
+.slideshow-wrapper .vi { float:left; position:absolute; width:230px; height:311px; z-index:1; opacity:0; filter:alpha(opacity=0); }
+.slideshow-wrapper .bak { float:left; position:absolute; width:230px; height:300px; display:none; }
+
+.slideshow-wrapper .btn { float:left; position:absolute; width:230px; height:10px; margin:300px 0 0 0; z-index:30; }
+.slideshow-wrapper .btn .btnbox { float:left; position:relative; width:230px; height:10px; margin-left:0px; }
+.slideshow-wrapper .btn .btnbox .bull { float:left; position:relative; width:46px; height:5px; padding-right:0px; background-color:#1f1e24; margin-left:0px; cursor:pointer; }
+.slideshow-wrapper .btn .btnbox .bull.active { float:left; position:relative; width:46px; height:5px; padding-right:0px;  background-color:#545b63; }
+
+/* °¶·¯¸® ÀÌ¹ÌÁö ¹× ÄÁÅÙÃ÷ */
+.slideshow-wrapper .vi .imgLink { width:230px; height:300px; overflow:hidden; }
+.slideshow-wrapper .vi .imgLink img { width:230px; height:300px; } 
+
+.slideshow-wrapper .vi .gall_cont {clear:both; }
+.slideshow-wrapper .vi .gall_cont div {  position:absolute; width:170px; height:50px;  top:120px; left:30px; opacity:50; filter:alpha(opacity=50); vertical-align: middle;}
+.slideshow-wrapper .vi .gall_cont a { font-family: 'Roboto Condensed', 'Nanum Gothic', sans-serif; font-weight:400; font-size:20px; color:#fff; vertical-align: middle;}
+.gall_title {  position:relative; text-align:center; padding-top:15px; overflow:hidden;  }
+.slideshow-wrapper .vi .gall_cont p{  position:relative; text-align:center; line-height:30px; font-family: 'Roboto Condensed','Nanum Gothic', sans-serif; font-weight:400; font-size:12px; color:#fff; text-decoration:underline;}
+
+/* BASIC css end */
+

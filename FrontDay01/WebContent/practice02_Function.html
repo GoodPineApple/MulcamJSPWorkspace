@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var body;
+	if(confirm("더하기는 확인, 곱하기는 취소") == true){
+		body = "return a + b";
+	} else {
+		body = "return a * b";
+	}
+	var add = new Function("a", "b", body);
+	document.write("result = " + add(2,3) + "<br>")
+</script>
+</head>
+<body>
+
+</body>
+</html>

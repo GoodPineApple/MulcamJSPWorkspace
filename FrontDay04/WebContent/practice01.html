@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>atttselector</title>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('p[title]').css('background','yellow');
+	$('input[type=password]').css('background','red');		
+})
+
+</script>
+</head>
+<body>
+	<p>일반문단입니다.</p>
+	<p title="툴팁으로 보입니다.">타이틀을 가지는 문단입니다.</p>
+	<input type="text">회원번호
+	<input type="password">비밀번호
+	
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+/* (자식선택자 >) */
+	table > td{
+		color:red;
+	}
+/* (자손선택자 공백) */
+ 	table td{ 
+ 		color:blue; 
+ 	} 
+	table .a{
+		background:red;
+	}
+
+</style>
+
+</head>
+<body>
+<ul>
+	<li class="a">자바</li>
+	<li>JSP</li>
+	<li>Spring</li>
+</ul>
+<table border="1">
+	<tr>
+		<td>이름</td>
+		<td>점수</td>
+	</tr>
+	<tr>
+		<td class="a">양유진</td>
+		<td>
+			<ul>
+				<li>수학 100</li>
+				<li>국어 100</li>
+				<li>과학 100</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>홍길동</td>
+		<td>
+			<ul>
+				<li>수학 100</li>
+				<li>국어 200</li>
+				<li>과학 90</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>김자바</td>
+		<td>
+			<ul>
+				<li>수학 10</li>
+				<li>국어 10</li>
+				<li>과학 10</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="a">송중기</td>
+		<td>
+			<ul>
+				<li>수학 300</li>
+				<li>국어 300</li>
+				<li>과학 300</li>
+			</ul>
+		</td>
+	</tr>
+
+
+</table>
+
+</body>
+</html>

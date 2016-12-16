@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<script type="text/javascript">
+	var num = 100;
+
+	window.onload = function() {
+		// body 내부의 문서내용 덮어쓰기
+		document.write('문서내용<br>');
+
+		// 경고창 띄우기
+		alert('test1');
+
+		// 콘솔에 메세지 띄우기
+		console.log('test2');
+
+		//body 내부의 문서내용 이어쓰기
+		document.body.innerHTML += '이어붙임';
+	}
+</script>
+<title>test06.html</title>
+</head>
+<body>
+	<h2>Test</h2>
+</body>
+</html>

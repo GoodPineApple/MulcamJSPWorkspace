@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="UI_STATE">
+	<section name="03296276-3bf1-4aee-8b6f-5c21d8ddc2da">
+		<item value="&lt;list&gt;&#x0A;  &lt;SQL__WORKSHEET&gt;&#x0A;    &lt;isActive&gt;false&lt;/isActive&gt;&#x0A;    &lt;isDirty&gt;false&lt;/isDirty&gt;&#x0A;    &lt;index&gt;5&lt;/index&gt;&#x0A;    &lt;content&gt;&lt;/content&gt;&#x0A;    &lt;name&gt;Worksheet 1&lt;/name&gt;&#x0A;  &lt;/SQL__WORKSHEET&gt;&#x0A;  &lt;SQL__WORKSHEET&gt;&#x0A;    &lt;isActive&gt;false&lt;/isActive&gt;&#x0A;    &lt;isDirty&gt;false&lt;/isDirty&gt;&#x0A;    &lt;index&gt;6&lt;/index&gt;&#x0A;    &lt;content&gt;&lt;/content&gt;&#x0A;    &lt;name&gt;Worksheet 1&lt;/name&gt;&#x0A;  &lt;/SQL__WORKSHEET&gt;&#x0A;&lt;/list&gt;" key="EDITORS"/>
+		<item value="" key="CONTAINER"/>
+	</section>
+	<section name="de1b86ec-39fd-4f16-a4b6-69fd17ed75d2">
+		<item value="&lt;list/&gt;" key="EDITORS"/>
+		<item value="" key="CONTAINER"/>
+	</section>
+</section>

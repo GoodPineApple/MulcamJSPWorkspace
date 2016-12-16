@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test04_closure.html</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function outcount() {
+			var count = 0;
+			
+			setInterval(function() {
+				count++;
+				document.write(count+"초 지났습니다."+"<br>");
+			}, 1000)	
+		}
+		outcount();
+	</script>
+</body>
+</html>

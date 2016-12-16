@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test02.html</title>
+<script type="text/javascript">
+	func1();
+// 	func2(1,2);
+	
+	function func1() {
+		alert('func1 호출됨');
+	}
+	var func2 = function(x,y) {
+		alert('func2호출됨' + (x+y));
+	}
+</script>
+</head>
+<body>
+	<button onclick="func1()">버튼1</button><br>
+	<button onclick="func2(10,20)">버튼2</button><br>
+</body>
+</html>

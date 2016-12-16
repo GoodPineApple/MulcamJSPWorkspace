@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>practice05.html</title>
+<script type="text/javascript">
+	function changeCaption(cap) {
+		document.getElementById("fruit").innerText = cap;
+	}
+	function changeColor(color) {
+		document.getElementById("fruit").style.color = color;
+	}
+</script>
+</head>
+<body>
+	<h1 id="fruit">과일</h1>
+	<form>
+		<input type="button" value="Apple" onClick="changeCaption('Apple'),changeColor('red')">
+		<input type="button" value="Orange" onClick="changeCaption('Orange',changeColor('orange'))">
+		<input type="button" value="WaterMelon" onClick="changeCaption('WateMelon',changeColor('green'))">
+		<input type="button" value="Grape" onClick="changeCaption('Grape',changeColor('purple'))">
+	</form>
+</body>
+</html>

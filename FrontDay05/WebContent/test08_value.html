@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#btn').click(function(){
+			alert('입력값:'+$('#inputId').val())
+		})
+		$('#inputId').val('김태민')
+	})
+</script>
+</head>
+<body>
+	<input type="text" id="inputId" name="userId"/>
+	<p>id 속성값은 자바스크립트 또는 css의 식별자로 사용되고,
+	name 속성값은 클라이언트에서 서버로 전달되는 파라미터 이름으로 사용됨</p>
+	<button id="btn">input value 확인</button>
+</body>
+</html>

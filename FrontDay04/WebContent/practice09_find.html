@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+	$(function(){
+		$('p').find('strong').css('background','yellow')
+	})
+	// p문단 안에있는 strong을 찾아서 적용
+	$(function() {
+		$('p > strong').css('background','yellow')
+	})
+	// 요거랑 같은 의미
+</script>
+</head>
+<body>
+	<p>문단 안에 <strong>강조</strong> 표시가 있다.</p><br>
+	<div>디비전 안에 <strong>강조</strong> 표시가 있다.</div><br>
+</body>
+</html>

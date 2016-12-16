@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test04.html</title>
+</head>
+<body>
+	색상:<input type="color"/><br>
+	날짜:<input type="date"/><br>
+	시간:<input type="time"/><br>
+	범위:<input type="range"/><br>
+	후보제공:<input type="url" list="url_list"/><br>
+	
+	<datalist id="url_list">
+		<option label="네이버" value="http://www.naver.com"/>
+		<option label="다음" value="http://www.daum.net"/>
+		<option label="구글" value="http://www.google.co.kr"/>
+	</datalist>
+	<hr/>
+	자동완성:<input type="text" list="keywords" autocomplete="on"
+		placeholder="자동완성">
+	
+	<datalist id="keywords">
+		<option label="네이버" value="Naver"/>
+		<option label="다음" value="Daum"/>
+		<option label="사과" value="Apple"/>
+	</datalist>
+	자동초점:<input type="text" autofocus="autofocus"/>
+	<hr/>
+	<form>
+		<input type="text" placeholder="이름 입력" required><br>
+		<input type="email" placeholder="email 입력" required><br>
+		<input type="url" placeholder="사이트주소"><br>
+		<input type="submit">
+	</form>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test02_click.html</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		var arColor = ['Red','Green','Blue'];
+		$('div').css('color',function(index,style){
+			return arColor[index]
+		})
+	})
+</script>
+</head>
+<body>
+	<div><h1 id="a">A</h1></div>
+	<div><h1>B</h1></div>
+	<div><h1>C</h1></div>
+	<div><h1>D</h1></div>
+	<div><h1>E</h1></div>
+	<div><h1>F</h1></div>
+</body>
+</html>

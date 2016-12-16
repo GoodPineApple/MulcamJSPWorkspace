@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#btn').click(function(){
+			var para = $('#para1');
+			$('div').append(para);	
+		})
+	})
+// 이미 body에 있는 내용을 append하면 <이동>하는 것처럼 보임.
+</script>
+</head>
+<body>
+	<button id="btn">move</button>
+	<div>
+		<p>문단0</p>
+		<p id="para1">문단1</p>
+		<p>문단2</p>
+		<p>문단3</p>
+	</div>
+</body>
+</html>

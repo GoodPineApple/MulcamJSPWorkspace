@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test09.html</title>
+<script type="text/javascript">
+	window.onload = function(){
+		alert("test");
+		var colors = ["RED","ORANGE","YELLOW","GREEN"];
+		var li = document.getElementsByTagName('li');
+		for(var i =0; i<4; i++) {
+			li[i].style.backgroundColor=colors[i];
+		}
+	}
+</script>
+</head>
+<body>
+	<ul>
+		<li>Java</li>
+		<li>JSP</li>
+		<li>Spring</li>
+		<li>Android</li>
+	</ul>
+</body>
+</html>

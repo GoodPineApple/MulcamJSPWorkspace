@@ -1,0 +1,8 @@
+@CHARSET "EUC-KR";
+
+h1{
+	color:lime;
+	font-style: italic;
+	margin: 100px;
+	border: thick red double;	
+}

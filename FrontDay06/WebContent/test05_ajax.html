@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').click(function(){
+// 			$.ajax 함수 설명
+// 			$.ajax({
+// 				url : 요청 url,
+// 				type : get/post,
+// 				data : 서버에게 보낼 파라미터,
+// 				datetype : 서버 응답 데이터 xml/json,
+// 				success : function(){}, 응답성공시 실행함수
+// 				error : function(){} 응답실패시 실행함수
+// 			})
+			$.ajax({
+				url :"/FrontDay06/ajax.do",
+				type : "get",
+				datatype : "xml",
+				success : function(data){
+					var result = "";
+					
+					$(data).find('person').each(function(index){
+						result += "<tr>";
+						result += "<td>" + (index + 1) + "</td>";
+						result += "<td>" + $(this).find('name').text() + "</td>";
+						result += "<td>" + $(this).find('age').text() + "</td>";
+						result += "<td>" + $(this).find('addr').text() + "</td>";
+						result += "</tr>";
+					})
+					
+					$('table').append(result)
+				},
+				error : function(exception){
+					alert("ajax error : " + exception.message);
+				}
+			})
+		})
+	})
+</script>
+</head>
+<body>
+	<button>xml을 ajax통신으로 요청</button>
+	<table border="1">
+		<tr>
+			<th>번호</th>
+			<th>이름</th>
+			<th>나이</th>
+			<th>주소</th>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test05_RandNum</title>
+<script type="text/javascript">
+		var randNum = 0;
+		var count = 0;
+
+		function shuffle() {
+			randNum = 1 + Math.abs(Math.floor(Math.random() * 10));
+			console.log("randNum : " + randNum);
+			document.getElementById('result').innerText = "1~10 사이의 숫자가 추첨되었습니다."
+		}
+
+		function confirmNum() {
+			var userNum = document.getElementById('userNum');
+			console.log("userNum : " + userNum.value);
+			count++;
+			if (randNum > userNum.value) {
+				document.getElementById('result').innerText = "작습니다.";
+			} else if (randNum < userNum.value) {
+				document.getElementById('result').innerText = "큽니다.";
+			} else if (randNum == userNum.value) {
+				document.getElementById('result').innerText = count + "번만에 맞췄습니다.";
+				count = 0;
+			}
+		}
+
+</script>
+</head>
+<body>
+	<button id="shuffle" value="난수추첨" onclick="shuffle()">난수추첨</button>
+	<p id="result">1~10사이의 숫자를 입력하시오</p>
+	<input type="text" id="userNum" size="20" placeholder="1~10 사이의 숫자를 입력하세요."> 
+	<input type="button" id="submit" value="확인" onclick="confirmNum()">
+</body>
+</html>

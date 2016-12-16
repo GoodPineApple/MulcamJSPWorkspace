@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test02.html</title>
+<script type="text/javascript">
+	function tick(){
+		var nowtime = document.getElementById("nowtime");
+		nowtime.innerHTML = (new Date()).toLocaleString();
+	}
+	// innerHTML의 정확한 기능이 뭐지? innerText랑 다른건가?
+	// tolocaleString()도 모르겠다.
+	var timer = setInterval("tick()", 1000);
+	// setInterval(함수,시간);
+</script>
+</head>
+<body>
+	<p id="nowtime">현재시간</p>
+
+</body>
+</html>

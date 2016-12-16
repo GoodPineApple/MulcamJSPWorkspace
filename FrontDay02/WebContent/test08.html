@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test08.html</title>
+<script type="text/javascript">
+	//  getElementById(id값)
+	//  getElementsByName(name값)
+	//  getElementsByTagName(태그이름)
+	window.onload = function() {
+		var h1 = document.getElementById('target');
+		var h1_msg = h1.innerHTML;
+		alert(h1_msg);
+		h1.innerHTML = '테스트 끝남';
+	}
+</script>
+</head>
+<body>
+	<h1 id="target">테스트중</h1>
+	<p>테스트중2</p>
+</body>
+</html>

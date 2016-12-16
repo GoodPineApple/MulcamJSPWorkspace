@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test06.html</title>
+</head>
+<body>
+<script type="text/javascript">
+	var human = {
+			name : "김태민",
+			age : 25,
+			소속 : "sds",									// 한글 name도 된다.
+			"#어디 대학교 나왔니" : "skhu",					// 한글문자열에 첫글자 기호도 가능하다. ㅁㅊ...
+			"Do you want ColdPlay concert?" : "sure",	// name을 문자열로 만들 수도 있다.
+			score1 : 99,
+			score2 : 100,
+			score3 : 100
+	};
+	
+	document.write("name : " + human.name+ "<br>");
+	document.write("age : " + human.age+ "<br>");
+	document.write("소속 : " + human.소속+ "<br>");
+	document.write("어디 대학교 나왔니 : " + human["#어디 대학교 나왔니"]+ "<br>");
+	document.write("Do you want ColdPlay concert? : " + human["Do you want ColdPlay concert?"]+ "<br>");
+	for(i=1; i<=3; i++){
+		document.write(i + "학년 성적 : " + human["score"+i] + "점<br>");
+	}
+	
+</script>
+</body>
+</html>

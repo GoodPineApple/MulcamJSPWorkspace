@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style type="text/css">
+@CHARSET "UTF-8";
+
+
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+	   var verifyemail = function() {
+	   var isGood = "";
+	   var emailAddr = $("input").val();
+	   // 이메일 입력폼에 등록된 값을 변수에 저장
+
+	   var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+	   // 검증에 사용할 정규식 변수 regExp에 저장
+
+	   if (emailAddr.match(regExp) != null) {
+	      var isGood = true;
+	   }
+	   else {
+	      var isGood = false;
+	   }
+
+	   if (isGood) {
+	      $("form").submit();
+	   }
+	   else {
+	      alert("입력된 주소를 확인해주세요");
+	      return;
+	   }
+	})  
+</script>
+</head>
+<body>
+<form class="emailSubscribe" action="/enroll.php">
+   <h4>뉴스레터 구독으로 간편하게 새소식을 만나세요!"</h4>
+   <div>
+      <input id="testinput" type="text" maxlength="50" name="mailAddr" />
+      <button type="button" onclick="verifyemail()">지금 구독하기</button>
+   </div>
+</form>
+
+
+</body>
+</html>

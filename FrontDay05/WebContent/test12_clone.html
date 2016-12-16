@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var para
+		$('#clone').click(function(){
+			para = $('#para1').clone();
+		})
+		$('#paste').click(function(){
+			$('div').append(para);	
+		})
+	})
+// 복사해서 붙일 수 있다!
+</script>
+</head>
+<body>
+	<button id="clone">clone</button>
+	<button id="paste">paste</button>
+	<div>
+		<p>문단0</p>
+		<p id="para1">문단1</p>
+		<p>문단2</p>
+		<p>문단3</p>
+	</div>
+</body>
+</html>

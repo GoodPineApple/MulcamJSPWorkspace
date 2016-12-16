@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function func1() {
+		alert('버튼1 눌림!');
+	}
+	var func2 = function() {
+		alert('버튼2 눌림!');
+	}
+	
+// 아래 html 문서를 완성한 직후에 1번 실행할 함수
+	window.onload = function() {
+// 		document.getElementById("btn2").onclick = func2;
+		var value = 100;
+		document.getElementById("btn2").onclick = function(){
+			value++;
+			alert("무명함수로 이벤트 등록!"+value);
+		}
+		// 클로져 개념. value가 계속 살아있음
+		alert("onload는 종료됨")
+}
+</script>
+</head>
+<body>
+<input type="button" id="btn1" value="버튼1" onclick="func1()">
+<button id="btn2">버튼2</button>
+</body>
+</html>

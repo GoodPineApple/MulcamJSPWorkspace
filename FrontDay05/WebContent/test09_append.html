@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test09_append</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+// append는 대상의 뒤쪽에! 내가 선택한 녀석의 안쪽으로!
+// prepend는 대상의 앞쪽에! 내가 선택한 녀석의 안쪽으로!
+	$(function(){
+		var img = "<img src='img/doboo.png' width='300' height='200'/>";
+		$('#btnAppend').click(function(){
+			$('#ap').append(img);	
+		})
+		$('#btnPrepend').click(function(){
+			$('#pre').prepend(img);	
+		})
+		
+// after은 대상의 뒤쪽에! 내가 선택한 녀석의 바깥쪽으로!
+// before는 대상의 앞쪽에! 내가 선택한 녀석의 바깥쪽으로!
+		$('#btnBefore').click(function(){
+			$('#be').before(img);	
+		})
+		$('#btnAfter').click(function(){
+			$('#af').after(img);	
+		})
+	})
+</script>
+<style type="text/css">
+	h2{background : yellow;}
+</style>
+</head>
+<body>
+	<button id="btnAppend">append 추가</button>
+	<button id="btnPrepend">prepend 추가</button>
+	<h2 id="ap">append</h2>
+	<h2 id="pre">prepend</h2>
+	<hr>
+	<button id="btnAfter">after 추가</button>
+	<button id="btnBefore">before 추가</button>
+	<h2 id="be">before</h2>
+	<h2 id="af">after</h2>
+</body>
+</html>

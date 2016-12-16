@@ -1,0 +1,5 @@
+1477273444661	Rename resource 'test01.jsp'
+1477284034167	Rename resource 'login_failstatus.jsp'
+1477285210514	Move 'META-INF' to 'WEB-INF'
+1477285216087	Move 'logout.jsp' to 'WebContent'
+1477290353952	Rename resource 'Test05_login_form.jsp'

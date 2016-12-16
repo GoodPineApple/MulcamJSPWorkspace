@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		$('#btn').click(function(){
+			band = "/ ";
+			gender = "/ ";
+			$('#band:checked').each(function(){
+				band += $(this).val()+ " / ";
+			})
+			$('#gender:checked').each(function(){
+				gender += $(this).val();
+			})
+			$('#bandResult').html(band);
+			$('#genderResult').html(gender);
+		})
+	})
+</script>
+</head>
+<body>
+<h1>click이벤트</h1>
+instrument:<input type="checkbox" id="band" value="guitar">guitar
+			<input type="checkbox" id="band" value="drum">drum
+			<input type="checkbox" id="band" value="piano">piano<br>
+gender:<input type="radio" name="gender" id="gender" value="man">man
+		<input type="radio" name="gender" id="gender" value="woman">woman
+		<button id="btn">제출</button>
+<hr>
+<h2>선택결과</h2>
+<div>취미 : <span id="bandResult"></span></div>
+<div>성별 : <span id="genderResult"></span></div>
+</body>
+</html>

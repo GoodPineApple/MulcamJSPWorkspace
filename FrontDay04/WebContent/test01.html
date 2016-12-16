@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test01.html</title>
+<script src="js/jquery-3.1.1.min"></script>
+<script type="text/javascript">
+	var child;
+	function openChild(){
+		child = window.open("http://www.google.com","","width=400,height=300,resizable=no");
+// 		child.document.write("<p>ÀÚ½Ä Ã¢</p>");
+		child.moveTo(100,100);
+	}
+	function moveChild(){
+		child.moveBy(10,10);
+		child.focus();
+	}
+	
+	function closeChild(){
+		child.close();
+	}
+</script>
+</head>
+<body>
+	<button onclick="openChild()">OPEN</button>
+	<button onclick="moveChild()">MOVE</button>
+	<button onclick="closeChild()">CLOSE</button>
+</body>
+</html>

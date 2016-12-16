@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('li:first').css('background','yellow');
+		$('li:first-child').css('border','solid 3px red');
+		// 누군가의 첫번째 자식 모두에게 적용된다.
+	})
+</script>
+</head>
+<body>
+	<p>여자에게 인기있는 남자</p>
+	<ol>
+		<li>능력있는 남자
+		<li>돈 많은 남자
+		<li>잘 생긴 남자
+		<li>프로그래머
+	</ol>
+	<p>남자에게 인기있는 여자</p>
+	<ol>
+		<li>다현 닮은 여자
+		<li>예쁜 여자
+		<li>귀여운 여자
+		<li>섹시한 여자
+	</ol>
+</body>
+</html>

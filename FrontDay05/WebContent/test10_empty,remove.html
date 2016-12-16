@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		var img = "<img src='img/doboo.png' width='300' height='200'/>";
+		var remember
+		$('#empty').click(function(){
+			$('div').empty();
+		}) // 태그 속 내용 비우기
+		$('#append').click(function(){
+// 			$('div').append(remember)
+			$('div').append(img);			
+		}) // 엘리먼트 추가
+		$('#detach').click(function(){
+			remember = $('div').detach();
+			remember.append('div')
+		}) // 잘라두기
+		$('#remove').click(function(){
+			$('div').remove();
+		}) // 태그까지 삭제
+	})
+</script>
+</head>
+<body>
+	<div>
+		<h1>test</h1>
+	</div>
+	<button id="empty">empty</button>
+	<button id="append">append</button>
+	<button id="remove">remove</button>
+	<button id="detach">detach</button>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test12_click.html</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+// text함수
+// : 요소의 텍스트를 알아내거나 바꾸고자 할 때 사용하는 함수
+// html함수
+// : 요소의 내용을 HTML인식으로 변경하거나 알아내고자 할 때 사용
+	$(function(){
+		$('#btn').click(function(){
+// 			$('div').html('<h1>JQuerry</h1>')
+			$('div').text('<h1>JQuerry</h1>')
+		})
+	})
+</script>
+</head>
+<body>
+	<button id="btn">누르시오</button>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

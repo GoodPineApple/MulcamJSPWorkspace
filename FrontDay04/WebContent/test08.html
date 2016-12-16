@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test08.html</title>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// 		전체선택자
+// 		$('*').css('color', 'red');
+		
+		// 		태그이름선택자
+// 		$('h1').css('textDecoration', 'underline');
+		
+		// 		클래스선택자
+// 		$('.a').css('backgroundColor', 'Yellow');
+		
+		// 		아이디선택자
+// 		$('#target').css('fontSize', '30px');
+
+// 		//		자식선택자
+		$('ul > li').css('color','blue');
+
+// 		//		자손선택자
+// 		$('ul li').css('color','red');
+	})
+</script>
+</head>
+<body>
+	<h1>jQuery 선택자 실습</h1>
+	<h1>jQuery 선택자 실습2</h1>
+	<ul>
+		<li>java</li>
+		<li class="a">jsp</li>
+		<li class="a">html</li>
+		<li class="a" id="target">css</li>
+		<li>javaScript</li>
+		<ol>
+			<li>android</li>
+			<li>iphone</li>
+		</ol>
+	</ul>
+</body>
+</html>
+
+
+

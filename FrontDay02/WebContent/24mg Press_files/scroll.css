@@ -1,0 +1,25 @@
+/* BASIC css start */
+/* BASIC css start */
+#blk_scroll_wings, #cherrypicker_scroll { position:fixed !important; left:0px !important; top:690px !important; }
+
+/* 최근본상품 */
+.today { /*position:fixed !important; bottom:30px !important; left:50px !important; z-index:12;*/ position:relative; clear:both; margin-left:50px; }
+.today .pro_view { position:relative; width:230px; height:84px; }
+
+.pro_view .title { clear:both; font-family: 'Roboto Condensed', 'Nanum Gothic', sans-serif; font-weight:400; font-size:14px; letter-spacing:1px; color:#000; height:19px; line-height:19px; margin-bottom:15px; }
+
+.pro_view .btn_prev { position:absolute; top:0px; right:15px; width:15px; height:19px; }
+.pro_view .btn_next { position:absolute; top:0px; right:0px; width:15px; height:19px; }
+
+.pro_view #viewimg { clear:both; width:230px; height:50px; overflow:hidden; }
+.pro_view ul { font-size:0; line-height:0; }
+.pro_view li { float:left; width:50px; height:50px;  }
+.pro_view li:first-child { }
+.pro_view li a { }
+.pro_view li a img { width:50px; height:50px; }
+
+/* BASIC css end */
+
+
+/* BASIC css end */
+

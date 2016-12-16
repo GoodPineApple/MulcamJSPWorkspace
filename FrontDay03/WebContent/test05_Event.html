@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test05_Event.html</title>
+<script type="text/javascript">
+	// 자바스크립트 이벤트의 종류
+	// onkeyup : 기보드의 키를 눌렀다가 떼는 순간 발생하는 이벤트
+	// onload : html문서의 요소가 모드 로드되엇을 때
+	// onmousedown
+	// onmousemove
+	// 	onmouseout
+	// 	onmouseover
+	// 	onmouseup
+	// 	onsubmit : form 태그 내부의 서브밋 버튼을 널렀을 때 발생하는 이벤트
+	window.onload = function() {
+		var btn = document.getElementById('btn');
+		btn.onclick = function(e) {
+			console.log('x:' + e.x +' / y:' + e.y);
+		}
+	}
+</script>
+</head>
+<body>
+	<button id="btn">눌러서 이벤트 정보보기</button>
+</body>
+</html>
