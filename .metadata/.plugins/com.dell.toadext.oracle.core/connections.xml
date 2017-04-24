@@ -8,7 +8,7 @@
     <SavePassword>true</SavePassword>
     <Password>1JNyEQjeZYuEMa9P8b0EEA==</Password>
     <RestoreWork>false</RestoreWork>
-    <LastConnectionDate>2017-01-17T19:54:08</LastConnectionDate>
+    <LastConnectionDate>2017-03-31T15:31:10</LastConnectionDate>
     <ConnectionType>Default</ConnectionType>
     <ConnectionMode>Default</ConnectionMode>
     <Sid>xe</Sid>
@@ -105,12 +105,12 @@
           <Value>false</Value>
         </PerformanceOption>
         <PerformanceOption>
-          <Key>SEQUENCES</Key>
-          <Value>false</Value>
-        </PerformanceOption>
-        <PerformanceOption>
           <Key>VIEWS</Key>
           <Value>true</Value>
+        </PerformanceOption>
+        <PerformanceOption>
+          <Key>SEQUENCES</Key>
+          <Value>false</Value>
         </PerformanceOption>
         <PerformanceOption>
           <Key>VIEW_TRIGGERS</Key>
